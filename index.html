@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Launcher V2.4 - Pardus için Kolay Dosya Çalıştırıcı</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #1a252f;
+            color: #ecf0f1;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #1abc9c;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background-color: #2c3e50;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .card h2 {
+            color: #1abc9c;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 10px;
+        }
+        .download-area {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+            box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+        }
+        .btn:hover {
+            background-color: #27ae60;
+        }
+        ol {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="File Launcher Logo">
+        <h1>File Launcher V2.4 🚀</h1>
+        <p>Pardus üzerinde .exe ve .jar dosyalarını tek tıkla çalıştırın!</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2>Proje Hakkında</h2>
+            <p>Pardus Linux işletim sisteminde Windows (.exe) veya Java (.jar) uygulamalarını terminale kod yazmadan, doğrudan çift tıklayarak çalıştırmanızı sağlayan sürücü ve entegrasyon paketidir. Hem GNOME hem de XFCE masaüstü ortamlarını otomatik olarak destekler.</p>
+            
+            <div class="download-area">
+               <a href="file-launcher_2.4-1_all.deb" class="btn">📥 Pardus İçin İndir (.deb)</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Kolay Kurulum Kılavuzu 🛠️</h2>
+            <p>Artık terminal komutlarıyla uğraşmanıza gerek yok!</p>
+            <ol>
+                <li>Yukarıdaki <strong>"Pardus İçin İndir (.deb)"</strong> butonuna basarak paketi indirin.</li>
+                <li>İnen <code>File_launcher_2.4.1_all.deb</code> dosyasına çift tıklayın.</li>
+                <li>Açılan <strong>Pardus Paket Kurucu</strong> penceresinde <strong>"Paketi Kur"</strong> butonuna basın ve şifrenizi girin.</li>
+                <li>Sistem gerekli Python, Wine ve Java bağımlılıklarını otomatik olarak yükleyecektir.</li>
+                <li>Kurulum bittiğinde herhangi bir <code>.exe</code> veya <code>.jar</code> dosyasına sağ tıklayıp <strong>File Launcher V2.4</strong> ile açabilirsiniz!</li>
+            </ol>
+        </div>
+        
+        <div class="card">
+            <h2>Özellikler</h2>
+            <ul>
+                <li><strong>Sıfır Terminal Kullanımı:</strong> Kurulumdan çalıştırmaya kadar hiçbir kod yazmanız gerekmez.</li>
+                <li><strong>Çift Masaüstü Desteği:</strong> Hem Pardus GNOME hem de Pardus XFCE ile tam uyumludur.</li>
+                <li><strong>Otomatik Motor Eşleme:</strong> Windows uygulamalarını Wine, Java uygulamalarını Java çalıştırma motoru ile otomatik bağlar.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Developed by Yusuf Gültekin &copy; 2026. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
+ 
