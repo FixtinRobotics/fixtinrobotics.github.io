@@ -333,6 +333,8 @@
     border-radius:10px;
     overflow:hidden;
     border:1px solid var(--border);
+    height: 100%;
+    min-height: 380px;
   }
   .about-photo img{width:100%;height:100%;object-fit:cover;}
   .founders{
@@ -407,11 +409,12 @@
     padding-top:12px;
   }
 
+  /* ---------- Gallery (Yükseklik Düzeltildi) ---------- */
   .gallery{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    grid-auto-rows:170px;
-    gap:14px;
+    grid-auto-rows:260px;
+    gap:16px;
   }
   .gallery-item{
     position:relative;
@@ -428,18 +431,7 @@
     transition:transform .5s ease, filter .5s ease;
     filter:grayscale(.15) contrast(1.02);
   }
-  .gallery-item:hover img{transform:scale(1.06);filter:grayscale(0) contrast(1.05);}
-  .gallery-caption{
-    position:absolute;left:0;right:0;bottom:0;
-    padding:14px 16px 12px;
-    background:linear-gradient(0deg, rgba(0,0,0,.82), transparent);
-    font-family:var(--font-mono);
-    font-size:.74rem;
-    color:#e8ecec;
-    letter-spacing:.02em;
-    transform:translateY(6px);
-    opacity:.88;
-  }
+  .gallery-item:hover img{transform:scale(1.04);filter:grayscale(0) contrast(1.05);}
 
   /* ---------- Pardus ---------- */
   .pardus-section{
@@ -562,7 +554,7 @@
     .about-grid{gap:36px;}
     .pardus-grid{gap:36px;}
     .stat-row{grid-template-columns:1fr;}
-    .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;}
+    .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:200px;}
     .gallery-item{grid-column:span 1 !important;}
     .gallery-item.tall{grid-row:span 2;}
     .section{padding:76px 0;}
@@ -597,7 +589,6 @@
 
 <main id="top">
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-bg"></div>
 
@@ -643,7 +634,6 @@
     </div>
   </section>
 
-  <!-- HAKKIMIZDA -->
   <section class="section" id="hakkimizda">
     <div class="wrap">
       <div class="about-grid">
@@ -651,7 +641,7 @@
           <p class="eyebrow">Kimiz</p>
           <h2 class="section-title">Bağımsız bir gençlik robotik takımı</h2>
           <p>Fixtin, Türkiye'de genç geliştiriciler tarafından kurulmuş, kendisini STEM alanında geliştirmeyi hedefleyen bağımsız bir teknoloji ve robotik takımıdır. Yazılım, robotik, mühendislik ve elektronik üzerine yoğun şekilde proje geliştiriyoruz.</p>
-          <p>İki koldan ilerliyoruz: yarışma ringinde mücadele eden mini sumo robotlarımız, ve arka planda çalışan Pardus / Linuxพัฒนากิ geliştirmelerimiz. İkisi de aynı yerden besleniyor — merak ve deneme yanılma.</p>
+          <p>İki koldan ilerliyoruz: yarışma ringinde mücadele eden mini sumo robotlarımız, ve arka planda çalışan Pardus / Linux geliştirmelerimiz. İkisi de aynı yerden besleniyor — merak ve deneme yanılma.</p>
 
           <div class="founders">
             <div class="founder-card">
@@ -671,13 +661,12 @@
           </div>
         </div>
         <div class="about-photo reveal">
-          <img src="Yusuf%20ve%20Furkan'ın%20kampüsteki%20ekip%20fotoğrafı.png" alt="Fixtin kurucuları bir yarışma sonrası kampüste" loading="lazy">
+          <img src="Yusuf%20ve%20Furkan'ın%20kampüsteki%20ekip%20fotoğrafı.png" alt="Fixtin kurucuları" loading="lazy">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MINI SUMO -->
   <section class="section section-alt" id="mini-sumo">
     <div class="wrap">
       <div class="section-head reveal">
@@ -705,30 +694,24 @@
 
       <div class="gallery reveal">
         <div class="gallery-item tall">
-          <img src="Senju_V1_minisumo.png" alt="Senju V1'in gece test atışında kırmızı ve mavi LED'leri" loading="lazy">
-          <div class="gallery-caption">Senju V1 — gece test atışı</div>
+          <img src="Senju_V1_minisumo.png" alt="Senju V1" loading="lazy">
         </div>
         <div class="gallery-item wide">
-          <img src="Yusuf%20ve%20Furkan'ın%20kampüsteki%20ekip%20fotoğrafı.png" alt="Fixtin ekibi, Birikim Okulları Başakşehir kampüsünde dört mini sumo robotuyla" loading="lazy">
-          <div class="gallery-caption">Birikim Okulları — yarışma günü</div>
+          <img src="Yusuf%20ve%20Furkan'ın%20kampüsteki%20ekip%20fotoğrafı.png" alt="Fixtin Ekibi" loading="lazy">
         </div>
         <div class="gallery-item">
-          <img src="ituro.jpg" alt="Senju V1'in iki farklı prototip versiyonu yan yana" loading="lazy">
-          <div class="gallery-caption">Senju V1 — prototip karşılaştırması</div>
+          <img src="ituro.jpg" alt="İTÜRO Prototip" loading="lazy">
         </div>
         <div class="gallery-item">
-          <img src="KurucuTURO_32@-684081897.jpg" alt="Senju V1 robotu elde tutulurken, arka planda İTÜRO fuaye alanı" loading="lazy">
-          <div class="gallery-caption">İTÜRO '26 — fuaye alanı</div>
+          <img src="KurucuTURO_32@-684081897.jpg" alt="İTÜRO Fuaye" loading="lazy">
         </div>
         <div class="gallery-item wide">
-          <img src="Senju_V1@2005598883.jpg" alt="Senju V1'in açık gövdesinde görünen devre kartı ve motor sürücüleri" loading="lazy">
-          <div class="gallery-caption">İç yapı — devre kartı &amp; motor sürücüleri</div>
+          <img src="Senju_V1@2005598883.jpg" alt="Senju V1 İç Yapı" loading="lazy">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PARDUS -->
   <section class="section pardus-section" id="pardus">
     <div class="wrap">
       <div class="pardus-grid">
@@ -754,7 +737,6 @@
     </div>
   </section>
 
-  <!-- FILE LAUNCHER -->
   <section class="section" id="file-launcher">
     <div class="wrap">
       <div class="section-head reveal">
